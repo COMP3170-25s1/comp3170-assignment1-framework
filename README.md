@@ -14,7 +14,7 @@
 * ULO2: Program 2D and 3D graphical applications using OpenGL embedded in a programming language (such as OpenGL in Java).
 
 ## Task Description
-Your task is to implement a top-down scene with a desert environment. Rocks and litter the land (Figure 1). A tank rolls over the scene, controlled by the keyboard.
+Your task is to implement a top-down scene with a desert environment. Rocks and cacti litter the land (Figure 1). A tank rolls over the scene, controlled by the keyboard.
 
 ![Image of the completed scene](ExampleImages/wholeproject.png) 
 
@@ -45,6 +45,8 @@ Throughout this document, we will refer to “world units”. A world unit is de
 |0|0|1|0|
 |0|0|0|1|
 
+Is 2 world units in width and height, and positioned at coordinate (2,3) in world space. You can think of 1 world unit as equivalent to 1 metre.
+
 ### Cactus – Mesh (5%)
 Create a cactus mesh with two branches. The cactus should be at least 1 world unit tall.
 
@@ -60,7 +62,7 @@ Randomly position 1000 rocks around the 200 x 500 area of world units.
 
 ![Image of the rocky terrain](ExampleImages/rockyfield.png)
 
-Each rock is an irregular polygon with vertices lying on a circle of radius 1, as shown in Figure 7. The angle 𝜃 between successive vertices (measured at the centre of the circle) should always be less than 90 degrees.
+Each rock is an irregular polygon with vertices lying on a circle of radius 1. The angle 𝜃 between successive vertices (measured at the centre of the circle) should always be less than 90 degrees.
 
 ![Image of a close up of a few rocks](ExampleImages/rocks.png)
 
@@ -70,13 +72,13 @@ Rock colour should be set to a hue of your choice, with a randomly chosen satura
 ![Rocks of different colours.](ExampleImages/rockcolours.png)
 
 ### Tank – Mesh (10%)
-Create a mesh of a Tank with a hull (dark green in colour, octagonal in shape), a turret (a colour of your choice, rectangular in shape) and a gun (colour of your choice, rectangular in shape). You may add more detail to this tank if you like, but remember to keep the basic shape legible for marking.
+Create a mesh of a Tank with a hull (a colour of your choice, octagonal in shape), a turret (a colour of your choice, rectangular in shape) and a gun (colour of your choice, rectangular in shape). You may add more detail to this tank if you like, but remember to keep the basic shape legible for marking.
 
 ![Image of a basic tank](ExampleImages/basictank.png)
 
 
 ### Tank – Vertex colouring (5%)
-Use vertex colouring to have the Tank’s components’ colouring changes across each mesh, as shown in Figure 10.
+Use vertex colouring to have the Tank components’ colouring changes across each mesh.
 
 ![Image of a tank with vertex colouring](ExampleImages/tankvertex.png)
 
@@ -86,7 +88,7 @@ The Tank can move forward in local space at a set speed when the `W` key is pres
 If the tank is moving forward, pressing the `A` key will rotate the tank at a set rate to the left in local space, and pressing `D` will rotate the tank at a set rate to the right in local space.
 
 ### Tank – Turret movement and gun scale (5%)
-The turret can rotate 360 degrees left and right. The gun can be scaled along its y axis to a minimum/maximum change of 25% of its original length. Rotation and scaling adhere to the following keyboard input:
+The turret can rotate 360 degrees left and right in local space. The gun can be scaled along its y axis to a minimum/maximum change of 3x of its original length. Rotation and scaling adhere to the following keyboard input:
 
 |Input|Action|
 |-|-|
@@ -96,21 +98,22 @@ The turret can rotate 360 degrees left and right. The gun can be scaled along it
 | Right arrow | Rotate turret right |
 
 <video src="ExampleImages/tankmovement.mov" width="320" height="240" controls></video>
+
 ### World camera (5%)
-Create a camera that follows the tank. The camera remains stationary, except for if the tank's mesh reaches the top or bottom quarters of the view, in which case the camera should move with itm The camera should remain aligned with the world X/Y coordinates and should not rotate.
+Create a camera that follows the tank. The camera remains stationary, except for if the tank's mesh reaches the top or bottom quarters of the view, in which case the camera should move with it. The camera should remain aligned with the world X/Y coordinates and should not rotate.
 
 ## World camera – resizing (10%)
 The view volume of the camera should be adjusted proportional to the size of the window, with scaling along the x axis. 
 
-A 600x600 window should show a 30x30 area of world space. Making the window’s height larger (or shorter) should reveal more (or less) of the world without changing the screen size of objects displayed. Making the window wider (or narrower) should scale objects. See Figure 10, and the video on iLearn, for a demonstration of this.
+A 600x600 window should show a 30x30 area of world space. Making the window’s height larger (or shorter) should reveal more (or less) of the world without changing the screen size of objects displayed. Making the window wider (or narrower) should scale objects.
 
 ![A wide view of the world, zoomed in.](ExampleImages/landscape.png)
 ![A narrow view of the world, zoomed out.](ExampleImages/portrait.png)
 
 ### Turret camera (5%)
-Another camera, which is three-times as zoomed in as the main camera, follows the tank’s turret. This camera rotates to orient itself around the turret's z-axis, and moves to keep the turret in its centre. It adheres to the same scaling rules as the world camera.
+Another camera, which is 3x as zoomed in as the main camera, follows the tank’s turret. This camera rotates to orient itself around the turret's z-axis, and moves to keep the turret in its centre. It adheres to the same scaling rules as the world camera.
 
-Pressing “2” switches the current view to the turret camera. Pressing “1” switches back to the world camera.
+Pressing '2' switches the current view to the turret camera. Pressing '1' switches back to the world camera.
 
 ## Distinction and HD level tasks
 The above tasks are enough for you to earn a Credit (with credit-level effort/skill applied). The below tasks are more challenging, and should only be attempted by students aiming for Distinction and HD marks. We recommend completing the above tasks first before attempting these.
@@ -124,12 +127,12 @@ As the tank moves across the field, it leaves tread marks behind it that show it
 ![Image tread marks](ExampleImages/treadmarks.png)
 
 ### Cacti colour bands (10%)
-The cacti feature bands of another shade running along its length, as shown below.
+The cacti feature bands of another shade running along its length.
 
 ![Image of cacti with colour bands](ExampleImages/cactibands.png) 
 
 ### Documentation
-In addition to your code, you should complete the `Report.md` file found at the top level of this repo, addressing all questions. Images can be placed in the reportimages folder, also located at the top level of this repo. See `Report.md` for a description of each of these tasks.
+In addition to your code, you should complete the `Report.md` file found at the top level of this repo, addressing all questions. Images can be placed in the 'ReportImages' folder, also located at the top level of this repo. See `Report.md` for a description of each of these tasks.
 
 Please use a ruler when drawing, and ensure your drawings are clear. Marks may be deducted for messy or unclear drawings.
 
@@ -143,6 +146,7 @@ Your marks will be calculated using three components (according to the rubric be
 * Correctness: Whether your code is correctly implemented.
 * Clarity: Whether your code is easy to understand.
 * Documentation: Whether your report contains all the required elements.
+
 This mark will be averaged with your Completeness mark, which refers to the total value of the components you have attempted. Each component is worth between 5% and 10%, as detailed above and in `Report.md`.
 
 Your final mark will be determined using the following formula:
@@ -171,10 +175,10 @@ AVERAGE(50% * 90%) = 70%
 
 |Criteria|Grade|Description|
 |-|-|-|
-|Correctness (60%)|HD (100)|Excellent work. Code is free from any apparent errors. Problems are solved in a suitable fashion. Contains no irrelevant code.|
-||D (80)|Very good work. Code has minor errors which do not significantly affect performance. Contains no irrelevant code.|
-||CR (70)|Good work. Code has one or two minor errors that affect performance. Problems may be solved in ways that are convoluted or otherwise show lack of understanding. Contains some copied code that is not relevant to the problem.|
-||P (60)|Poor. Code is functional but contains major flaws. Contains large passages of copied code that are not relevant to the problem.|
+|Correctness (60%)|HD (100)|Code is free from any apparent errors. Problems are solved in a suitable fashion. Contains no irrelevant code.|
+||D (80)|Code has minor errors which do not significantly affect performance. Contains no irrelevant code.|
+||CR (70)|Code has one or two minor errors that affect performance. Problems may be solved in ways that are convoluted or otherwise show lack of understanding. Contains some copied code that is not relevant to the problem.|
+||P (60)|Code is functional but contains major flaws. Contains large passages of copied code that are not relevant to the problem.|
 ||F (0-40)|Code compiles and runs, but major elements are not functional.|
 |Clarity (20%)|HD (100)|Good consistent style. Well structured & commented code. Appropriate division into classes and methods, to make implementation clear.|
 ||D (80)|Code is readable with no significant code-smell. Code architecture is adequate but could be improved.|
