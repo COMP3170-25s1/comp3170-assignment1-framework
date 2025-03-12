@@ -19,20 +19,21 @@ Complete the table below indicating the features you have attempted. This will b
 
 |Feature|Weighting|Attempted Y/N|
 |-------|---------|-------------|
-|Cactus mesh|5%|-|
+|Cactus – Mesh|5%|-|
 |Cacti field|5%|-|
 |Rocky terrain|10%|-|
-|Rocky colouring|5%|-|
-|Tank mesh|10%|-|
-|Tank vertex colouring|5%|-|
-|Tank transforms|5%|-|
-|Turret and gun animation|5%|-|
+|Rocks – Colour|5%|-|
+|Tank – Mesh|10%|-|
+|Tank – Vertex colouring|5%|-|
+|Tank – Animation/Movement|5%|-|
+|Tank – Turret movement and gun scale|5%|-|
 |World camera |5%|-|
-|World camera - resizing|10%|-|
+|World camera – resizing|10%|-|
 |Turret camera|5%|-|
 |Instancing|10%|-|
 |Tread marks|10%|-|
-|Cacti colour|10%|-|
+|Cacti colour bands|10%|-|
+|<b>Total</b>|-|-|
 
 ## Scene Graph
 Include a drawing (pen-and-paper or digital) of the scene graph used in your project.
