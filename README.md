@@ -19,17 +19,18 @@ Your task is to implement a top-down scene with a desert environment. Rocks and 
 ![Image of the completed scene](ExampleImages/wholeproject.png) 
 
 ## Framework
-For this assignment, you will need the COMP3170 LWJGL library that we have been using in the workshop classes. See the Week 1 workshop for instructions to download and install these library. Make sure to pull the latest version of the library from the repository before beginning the project.
+For this assignment, you will need the COMP3170 LWJGL library that we have been using in the workshop classes. See the Week 1 workshop for instructions to download and install this library. Make sure to pull the latest version of the library from the repository before beginning the project.
 
 This repo is the assignment. Inside this repo, you will find a Java project with the following files:
-* `Assignment1.java` - The “bare-bones” driver class for the project.
+* `Assignment1.java` – The “bare-bones” driver class for the project.
 * `Scene.java` – an example of a Scene class.
 * `Tank.java` – an example of a class using the SceneObject class.
 * `simple_vertex.glsl / simple_fragment.glsl` – a basic, simple shader.
+
 To complete the assignment, you will need to edit these files and add further classes (and shaders) of your own.
 
 ## Features
-You are required to complete each of the features below. Each features contributes a percentage towards your <b>Completeness</b> mark, as described below. Note that not all components are of equal difficulty.
+You are required to complete each of the features below. Each feature contributes a percentage towards your <b>Completeness</b> mark, as described below. Note that not all components are of equal difficulty.
 
 Note: In the spec, some specific numbers (e.g. the colour and size of the tank, etc) are not specified. You are free to choose whatever values you feel appropriate for these as long as they illustrate the behaviour required. However, remember to use named constants in your code (with comments to indicate units) to allow these values to be easily modified. Clarity marks will be deducted for using ‘magic numbers’ (embedded numerical constants given without explanation). 
 
@@ -53,12 +54,12 @@ Create a cactus mesh with two branches. The cactus should be at least 1 world un
 ![Image of a standard cactus mesh](ExampleImages/cactus.png)
 
 ### Cacti field (5%)
-Clear the background to a brownish, desert colour. Randomly position 1000 cacti throughout a 200 x 500 area of world units, as shown in Figure 5. Cacti should vary between 1 and 2 world units in height, with proportionate width.
+Clear the background to a brownish, desert colour. Randomly position 1000 cacti throughout a 200x500 area of world units, as shown in Figure 5. Cacti should vary between 1 and 2 world units in height, with proportionate width.
 
 ![Image of a cacti field](ExampleImages/cactifield.png)
 
 ### Rocky terrain (10%)
-Randomly position 1000 rocks around the 200 x 500 area of world units.
+Randomly position 1000 rocks around the 200x500 area of world units.
 
 ![Image of the rocky terrain](ExampleImages/rockyfield.png)
 
@@ -72,7 +73,7 @@ Rock colour should be set to a hue of your choice, with a randomly chosen satura
 ![Rocks of different colours.](ExampleImages/rockcolours.png)
 
 ### Tank – Mesh (10%)
-Create a mesh of a Tank with a hull (a colour of your choice, octagonal in shape), a turret (a colour of your choice, rectangular in shape) and a gun (colour of your choice, rectangular in shape). You may add more detail to this tank if you like, but remember to keep the basic shape legible for marking.
+Create a mesh of a Tank with a hull (colour of your choice, octagonal in shape), a turret (colour of your choice, rectangular in shape) and a gun (colour of your choice, rectangular in shape). You may add more detail to this tank if you like, but remember to keep the basic shape legible for marking.
 
 ![Image of a basic tank](ExampleImages/basictank.png)
 
@@ -131,13 +132,13 @@ The cacti feature bands of another shade running along its length.
 
 ![Image of cacti with colour bands](ExampleImages/cactibands.png) 
 
-### Documentation
+## Documentation
 In addition to your code, you should complete the `Report.md` file found at the top level of this repo, addressing all questions. Images can be placed in the 'ReportImages' folder, also located at the top level of this repo. See `Report.md` for a description of each of these tasks.
 
 Please use a ruler when drawing, and ensure your drawings are clear. Marks may be deducted for messy or unclear drawings.
 
 ## Submission
-To submit your assignment, you must push this repo with your complete Java project and Report. When you have completed your project, label your final commit `Final Submission` so we know your project is ready to mark. Late submissions will be marked in accordance with the late assessment policy as outlined in the Unit Guide.
+To submit your assignment, you must push this repo with your complete Java project and Report. When you have completed your project, make your final commit `Final Submission` so we know your project is ready to mark. Late submissions will be marked in accordance with the late assessment policy as outlined in the Unit Guide.
 
 To allow us to best evaluate your project, practice good version control habits of regular commits with clear and meaningful commit messages.
 
@@ -165,7 +166,7 @@ AVERAGE(80% * 90%)
 = 85%
 ```
 
-On the other hand, if you only attempt 50% of the features above, to the same level of quality (90%) your final mark would be: 
+On the other hand, if you only attempt 50% of the features above, to the same level of overall quality (90%) your final mark would be: 
 
 ```
 AVERAGE(50% * 90%) = 70%
@@ -183,7 +184,7 @@ AVERAGE(50% * 90%) = 70%
 |Clarity (20%)|HD (100)|Good consistent style. Well structured & commented code. Appropriate division into classes and methods, to make implementation clear.|
 ||D (80)|Code is readable with no significant code-smell. Code architecture is adequate but could be improved.|
 ||CR (70)|Code is readable but has some code-smell that needs to be addressed. Code architecture is adequate but could be improved.|
-||P (60)|Poor. Significant issues with code quality. Inconsistent application of style. Poor readability with code-smell issues. Code architecture could be improved.|
+||P (60)|Significant issues with code quality. Inconsistent application of style. Poor readability with code-smell issues. Code architecture could be improved.|
 ||F (0-40)|Significant issues with code quality. Inconsistent application of style. Poor readability with code-smell issues. Messy code architecture with significant encapsulation violations.|
 |Documentation (20%)|HD (100)|All sections are complete and accurately represent the code. All diagrams are neat, clear, and well annotated.|
 ||D (80)|All sections attempted with minor sloppiness or missing detail. No discrepancies between documentation and code.|
