@@ -52,4 +52,4 @@ Include a diagram illustrating the world camera calculations, including:
 
 The diagram should follow the below format, but with values relevant to your project:
 
-![ExampleCameraDiagram](ExampleImages/examplecameradiagram.png)
+![ExampleCameraDiagram](ReportImages/examplecameradiagram.png)
