@@ -19,33 +19,34 @@ Complete the table below indicating the features you have attempted. This will b
 
 |Feature|Weighting|Attempted Y/N|
 |-------|---------|-------------|
-|Cactus – Mesh|5%|-|
-|Cacti field|5%|-|
-|Rocky terrain|10%|-|
-|Rocks – Colour|5%|-|
-|Tank – Mesh|10%|-|
-|Tank – Vertex colouring|5%|-|
-|Tank – Animation/Movement|5%|-|
-|Tank – Turret movement and gun scale|5%|-|
-|World camera |5%|-|
-|World camera – resizing|10%|-|
-|Turret camera|5%|-|
-|Instancing|10%|-|
-|Tread marks|10%|-|
-|Cacti colour bands|10%|-|
+|Cactus – Mesh|4%|-|
+|Cacti field|4%|-|
+|Rocky terrain|8%|-|
+|Rocks – Colour|4%|-|
+|Tank – Mesh|8%|-|
+|Tank – Vertex colouring|4%|-|
+|Tank – Animation/Movement|4%|-|
+|Tank – Turret movement and gun scale|4%|-|
+|World camera |4%|-|
+|World camera – resizing|8%|-|
+|Turret camera|4%|-|
+|Instancing|8%|-|
+|Tread marks|8%|-|
+|Cacti colour bands|8%|-|
+|Documentation|20%|-|
 |<b>Total</b>|-|-|
 
-## Scene Graph
+## Scene Graph (5%)
 Include a drawing (pen-and-paper or digital) of the scene graph used in your project.
 
-## Mesh illustrations
+## Mesh illustrations (5%)
 Include illustrations of <b>all</b> the meshes used in your project, drawn to scale in model coordinates, including:
 * The origin
 * The X and Y axes
 * The coordinates of each vertex
 * The triangles that make the mesh
 
-## World camera calculations
+## World camera calculations (10%)
 Include a diagram illustrating the world camera calculations, including:
 * The viewport rectangle
 * The mapping from view (camera centric) coordinates to NDC
