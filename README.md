@@ -16,10 +16,10 @@
 ## Task Description
 Your task is to implement a top-down scene with a desert environment. Rocks and cacti litter the land (Figure 1). A tank rolls over the scene, controlled by the keyboard.
 
-![Image of the completed scene](ExampleImages/wholeproject.png) 
+<img alt = "Image of the completed scene" src = "ExampleImages/wholeproject.png" width="50%"> 
 
 ## Framework
-For this assignment, you will need the COMP3170 LWJGL library that we have been using in the workshop classes. See the Week 1 workshop for instructions to download and install this library. Make sure to pull the latest version of the library from the repository before beginning the project.
+For this assignment, you will need the COMP3170 LWJGL library that we have been using in the workshop classes. See the Week 1 workshop for how to download and install this library. Make sure to pull the latest version of the library from the repository before beginning the project.
 
 This repo is the assignment. Inside this repo, you will find a Java project with the following files:
 * `Assignment1.java` – The “bare-bones” driver class for the project.
@@ -29,8 +29,10 @@ This repo is the assignment. Inside this repo, you will find a Java project with
 
 To complete the assignment, you will need to edit these files and add further classes (and shaders) of your own.
 
+The repo also contains a Report template and folders for images.
+
 ## Features
-You are required to complete each of the features below. Each feature contributes a percentage towards your <b>Completeness</b> mark, as described below. Note that not all components are of equal difficulty.
+You are required to complete each of the features below. Note that not all features are of equal difficulty.
 
 Note: In the spec, some specific numbers (e.g. the colour and size of the tank, etc) are not specified. You are free to choose whatever values you feel appropriate for these as long as they illustrate the behaviour required. However, remember to use named constants in your code (with comments to indicate units) to allow these values to be easily modified. Clarity marks will be deducted for using ‘magic numbers’ (embedded numerical constants given without explanation). 
 
@@ -51,37 +53,37 @@ Is 2 world units in width and height, and positioned at coordinate (2,3) in worl
 ### Cactus – Mesh (4%)
 Create a cactus mesh with two branches. The cactus should be at least 1 world unit tall.
 
-![Image of a standard cactus mesh](ExampleImages/cactus.png)
+<img src = "ExampleImages/cactus.png" alt = "Image of a standard cactus mesh" width="50%">
 
 ### Cacti field (4%)
 Clear the background to a brownish, desert colour. Randomly position 1000 cacti throughout a 200x500 area of world units, as shown in Figure 5. Cacti should vary between 1 and 2 world units in height, with proportionate width.
 
-![Image of a cacti field](ExampleImages/cactifield.png)
+<img src = "ExampleImages/cactifield.png" alt = "Image of a cacti field" width="50%">
 
 ### Rocky terrain (8%)
 Randomly position 1000 rocks around the 200x500 area of world units.
 
-![Image of the rocky terrain](ExampleImages/rockyfield.png)
+<img alt = "Image of the rocky terrain" src = "ExampleImages/rockyfield.png" width="50%">
 
 Each rock is an irregular polygon. Each vertex should be between 0.5 and 1.0 units from the rock's centre in local space. The angle 𝜃 between successive vertices (measured from the centre of the rock) should always be less than 90 degrees. See below for an example mesh drawing (you should create your own in your report reflective of your work):
 
-![An illustration showing the varying of a rock's vertices.](ExampleImages/rockverticies.png)
+<img alt = "An illustration showing the varying of a rock's vertices." src = "ExampleImages/rockverticies.png" width="50%">
 
 ### Rocks - Colour (4%)
 Rock colour should be set to a hue of your choice, with a randomly chosen saturation and brightness value ranging from 0% to 100% in HSB space.
 
-![Rocks of different colours.](ExampleImages/rockcolours.png)
+<img alt = "Rocks of different colours." src = "ExampleImages/rockcolours.png" width="50%">
 
 ### Tank – Mesh (8%)
 Create a mesh of a Tank with a hull (colour of your choice, octagonal in shape), a turret (colour of your choice, rectangular in shape) and a gun (colour of your choice, rectangular in shape). You may add more detail to this tank if you like, but remember to keep the basic shape legible for marking.
 
-![Image of a basic tank](ExampleImages/basictank.png)
+<img alt = "Image of a basic tank" src = "ExampleImages/basictank.png" width="50%">
 
 
 ### Tank – Vertex colouring (4%)
-Use vertex colouring to have the Tank components’ colouring changes across each mesh.
+Use vertex colouring to have the Tank components’ colouring change per vertex.
 
-![Image of a tank with vertex colouring](ExampleImages/tankvertex.png)
+<img alt = "Image of a tank with vertex colouring" src = "ExampleImages/tankvertex.png" width="50%">
 
 ### Tank – Animation/Movement (4%)
 The Tank can move forward in local space at a set speed when the `W` key is pressed. 
@@ -108,8 +110,8 @@ The view volume of the camera should be adjusted proportional to the size of the
 
 A 600x600 window should show a 30x30 area of world space. Making the window’s height larger (or shorter) should reveal more (or less) of the world without changing the screen size of objects displayed. Making the window wider (or narrower) should scale objects.
 
-![A wide view of the world, zoomed in.](ExampleImages/landscape.png)
-![A narrow view of the world, zoomed out.](ExampleImages/portrait.png)
+<img alt = "A wide view of the world, zoomed in." src = "ExampleImages/landscape.png" width="50%">
+<img alt = "A narrow view of the world, zoomed out." src = "ExampleImages/portrait.png" width="50%">
 
 ### Turret camera (4%)
 Another camera, which is 3x as zoomed in as the main camera, follows the tank’s turret. This camera rotates to orient itself around the turret's z-axis, and moves to keep the turret in its centre. It adheres to the same scaling rules as the world camera.
@@ -127,12 +129,12 @@ Implement the cacti using instancing so all the cacti are drawn in a single draw
 ### Tread marks (8%)
 As the tank moves across the field, it leaves tread marks behind it that show its movement. The tread marks are black, and are shown as simple lines.
 
-![Image tread marks](ExampleImages/treadmarks.png)
+<img alt = "Image tread marks" src = "ExampleImages/treadmarks.png" width="50%">
 
 ### Cacti colour bands (8%)
 The cacti feature bands of another shade running along its length.
 
-![Image of cacti with colour bands](ExampleImages/cactibands.png) 
+<img alt = "Image of cacti with colour bands" src = "ExampleImages/cactibands.png" width="50%"> 
 
 ## Documentation
 In addition to your code, you should complete the `Report.md` file found at the top level of this repo, addressing all questions. The documentation is worth 20 marks, with this breakdown detailed in the rubric below and the `Report.md` file itself. Images can be placed in the 'ReportImages' folder, also located at the top level of this repo. See `Report.md` for a description of each of these tasks.
@@ -140,7 +142,7 @@ In addition to your code, you should complete the `Report.md` file found at the 
 Please use a ruler when drawing, and ensure your drawings are clear. Marks may be deducted for messy or unclear drawings.
 
 ## Submission
-To submit your assignment, you must push this repo with your complete Java project and Report. When you have completed your project, make your final commit `Final Submission` so we know your project is ready to mark. Late submissions will be marked in accordance with the late assessment policy as outlined in the Unit Guide.
+To submit your assignment, you must push this repo with your complete Java project and Report. When you have completed your project, make your final commit `Final Submission` so we know your project is ready to mark. Late submissions will be marked in accordance with the late assessment policy in the Unit Guide.
 
 To allow us to best evaluate your project, practice good version control habits of regular commits with clear and meaningful commit messages.
 
@@ -169,7 +171,7 @@ Each component of your documentation will be marked against the corresponding cr
 
 |Component|Grade|Description|
 |-|-|-|
-|Scene Graph (5%)|HD (100)|Scene graph is a clear, easy to read and makes appropriate use of colouring and arrows to convey information. Scene graph precisely represents code.|
+|Scene Graph (5%)|HD (100)|Scene graph iclear, easy to read and makes appropriate use of colouring and arrows to convey information. Scene graph precisely represents code.|
 ||D (80)|Scene graph is clear and easy to read. Scene graph precisely represents code.|
 ||CR (70)|Scene graph may contain minor errors in clarity and legibility, and may miss some nuance of implementation in code.|
 ||P (60)|Scene graph may miss some nuance of implementation in code. Errors in clarity and legibility, but still understandable.|
@@ -177,13 +179,13 @@ Each component of your documentation will be marked against the corresponding cr
 |Mesh Illustrations (5%)|HD (100)|Illustrations are neat, clear and well annotated. No discrepancies between illustrations and code.|
 ||D (80)|Illustrations are neat and clear. No discrepancies between illustrations and code.|
 ||CR (70)|Minor sloppiness or missing detail. Minor discrepencies between documentation and code.|
-||P (60)|Significant slipponess or missing detail. Values in illustrations show understanding of task, but may not reflect code.|
-||F (0-40)|Illustrations are unclear and badly drawn. Does not make use of graph paper. Illustrations are just screenshots from project or otherwise do not demonstrate an understanding of purpose.|
+||P (60)|Significant sloppiness or missing detail. Values in illustrations show understanding of task, but may not reflect code.|
+||F (0-40)|Illustrations are unclear and badly drawn. Does not make use of graph paper. Illustrations are just screenshots from project or otherwise do not demonstrate an understanding of the purpose of documentation.|
 | World Camera Calculations (10%)|HD (100)| Different calculations are clearly distinguishable in diagram. Values are accurate and representative of code. Diagram is neat, clear and well annotated.|
 ||D (80)|Minor sloppiness or missing detail. No discrepancies between documentation and code.|
 ||CR (70)|Minor sloppiness or missing detail. Values in diagram may be internally accurate, but does not match code.|
 ||P (60)|Significant sloppiness and missing detail. Values in diagram show understanding of the different coordinates.|
-||F (0-40)|Diagram is unclear and badly drawn. Does not make use of graph paper. Inacurate values, and/or major discrepencies between documentation and code.|
+||F (0-40)|Diagram is unclear and badly drawn. Inacurate values, and/or major discrepencies between documentation and code.|
 
 ## Resources and Help
 If you have any questions about the task, please post on the iLearn forums. Alternatively, you can email staff if the question is specific to your implementation.
@@ -192,4 +194,4 @@ If you have any questions about the task, please post on the iLearn forums. Alte
 For help picking colours that go well together, using existing colour palettes found online can be a good place to start. [Color Hunt](https://colorhunt.co/) and [Coolor](https://coolors.co/) are both useful places to find palettes others have made. Alternatively, you use [Canva's Color Wheel](https://www.canva.com/colors/color-wheel/) to find colours that compliment one another and build your own palettes.
 
 ### Digital drawings
-You may wish to use digital tools to create your drawings for documentation, and also to help you figure things out. We strongly recommend [Virtual Graph Paper](https://virtual-graph-paper.com/). Cam uses it in his lectures!
+You may wish to use digital tools to create your drawings for documentation, and also to help you figure things out. We strongly recommend [Virtual Graph Paper](https://virtual-graph-paper.com/). Cam uses it in his lectures! [Geogrebra](https://www.geogebra.org/) is also a useful tool for linear algebra calculations and diagrams.

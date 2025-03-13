@@ -19,6 +19,7 @@ Complete the table below indicating the features you have attempted. This will b
 
 |Feature|Weighting|Attempted Y/N|
 |-------|---------|-------------|
+|<b>Code</b>|
 |Cactus – Mesh|4%|-|
 |Cacti field|4%|-|
 |Rocky terrain|8%|-|
@@ -33,7 +34,10 @@ Complete the table below indicating the features you have attempted. This will b
 |Instancing|8%|-|
 |Tread marks|8%|-|
 |Cacti colour bands|8%|-|
-|Documentation|20%|-|
+|<b>Documentation</b>|
+|Scene Graph|5%|-|
+|Mesh Illustrations|5%|-|
+|World Camera Calculations|10%|-|
 |<b>Total</b>|-|-|
 
 ## Scene Graph (5%)
