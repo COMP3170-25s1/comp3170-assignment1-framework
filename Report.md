@@ -43,18 +43,22 @@ Complete the table below indicating the features you have attempted. This will b
 ## Scene Graph (5%)
 Include a drawing (pen-and-paper or digital) of the scene graph used in your project.
 
-## Mesh illustrations (5%)
+## Mesh illustrations (10%)
 Include illustrations of <b>all</b> the meshes used in your project, drawn to scale in model coordinates, including:
 * The origin
 * The X and Y axes
 * The coordinates of each vertex
 * The triangles that make the mesh
 
-## World camera calculations (10%)
+Each mesh will contribute to this mark. You cannot expect to get the full 10% for a perfect illustration of only one mesh.
+
+## World camera calculations (5%)
 Include a diagram illustrating the world camera calculations, including:
 * The viewport rectangle
 * The mapping from view (camera centric) coordinates to NDC
 * The mapping from NDC to viewport (pixel) coordinates
+
+The diagram should include a legend or other clear indication as to what calculation each colour is being used to represent.
 
 The diagram should follow the below format, but with values relevant to your project:
 

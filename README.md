@@ -141,6 +141,8 @@ In addition to your code, you should complete the `Report.md` file found at the 
 
 Please use a ruler when drawing, and ensure your drawings are clear. Marks may be deducted for messy or unclear drawings.
 
+Note: By virtue of what we are asking you to do here, the documentation mark will scale based on how many components you have completed. For example, you cannot expect to get the full 10% for meshes for doing a perfect ilustration of one mesh.
+
 ## Submission
 To submit your assignment, you must push this repo with your complete Java project and Report. When you have completed your project, make your final commit `Final Submission` so we know your project is ready to mark. Late submissions will be marked in accordance with the late assessment policy in the Unit Guide.
 
